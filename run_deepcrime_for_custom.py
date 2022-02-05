@@ -36,7 +36,7 @@ def run_automate():
     importlib.reload(const)
 
     run_deepcrime_tool()
-
+    props.MS = 'None' # Only running for the test data
     if props.MS == 'DC_MS':
         data['mode'] = 'train'
         data['subject_path'] = os.path.join('test_models', 'custom_model_train.py')
