@@ -23,7 +23,7 @@ def run_automate():
 
     data['subject_name'] = 'custom'
     data['subject_path'] = os.path.join('test_models', 'custom_model.py')
-    data['mutations'] = ["change_optimisation_function"]
+    data['mutations'] = ['change_activation_function']#previosly:  ["change_optimisation_function"]
 
     dc_props.write_properties(data)
 

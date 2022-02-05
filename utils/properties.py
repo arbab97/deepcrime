@@ -142,7 +142,7 @@ disable_batching = {
 change_activation_function = {
     "name": 'change_activation_function',
     "activation_function_udp": False,
-    "layer_udp": 6,
+    "layer_udp": 5, #5 for custom # targetting the last layer for custom_model (which was previously softmax)
     "runs_number": 10,
     "annotation_params": [],
     "layer_mutation": True,

@@ -37,8 +37,10 @@ def execute_mutants(mutants_path, mutations):
 
         model_params = getattr(props, "model_properties")
 
+        # Warning ! this is changed for experimental purpose to accomodate exhaustive
         udp = [value for key, value in mutation_params.items() if "udp" in key.lower() and "layer" not in key.lower()]
-
+        # udp=[False]
+        
         if len(udp) > 0:
             udp = udp[0]
         else:

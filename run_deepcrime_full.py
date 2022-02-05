@@ -50,6 +50,7 @@ def run_automate():
         # Run DeepCrime for the evaluation on the original strong test set
         run_deepcrime_tool()
 
+        props.MS = 'None' # Only calculating for the test dataset. 
         # If we do calculate DeepCrime mutation score for the subject (not the case for MovieRecommender subject)
         if props.MS == 'DC_MS':
             # Run DeepCrime for the evaluation on the train set
