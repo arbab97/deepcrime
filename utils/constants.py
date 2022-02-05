@@ -296,7 +296,8 @@ subject_params = {'mnist': {'epochs': 12, 'lower_lr': 0.001, 'upper_lr': 1},
                   'movie_recomm': {'epochs': 5, 'lower_lr': 0.0001, 'upper_lr': 0.001},
                   'audio': {'epochs': 50, 'lower_lr': 0.0001, 'upper_lr': 0.001, 'patience': 10},
                   'lenet': {'epochs': 50, 'lower_lr':  0.001, 'upper_lr': 0.01},
-                  'udacity': {'epochs': 50, 'lower_lr':  0.00001, 'upper_lr': 0.0001}
+                  'udacity': {'epochs': 50, 'lower_lr':  0.00001, 'upper_lr': 0.0001},
+                  'custom': {'epochs': 300, 'lower_lr': 0.001, 'upper_lr': 1}  # ! Might Need to update the lr params
                   }
 
 subject_short_name = {'mnist': 'MN', 'movie_recomm': 'MR', 'audio': 'SR', 'lenet': 'UE', 'udacity': 'UD'}

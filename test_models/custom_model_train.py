@@ -82,7 +82,7 @@ def main(model_name):
         model.fit(data_x, labels, batch_size=batch_size, epochs=epochs, verbose=1, validation_data=(test, test_y))
 
         model.save(os.path.join('trained_models', 'custom_trained.h5'))
-        score = model.evaluate(test, test_y, verbose=0)
+        score = model.evaluate(data_x, labels, verbose=0)
         print('Test loss:', score[0])
         print('Test accuracy:', score[1])
         return score
@@ -92,7 +92,7 @@ def main(model_name):
             session1 = tf.compat.v1.Session()
             with session1.as_default():
                 model = tf.keras.models.load_model(model_location)
-                score = model.evaluate(test, test_y, verbose=0)
+                score = model.evaluate(data_x, labels, verbose=0)
                 print(('score:' + str(score)))
         return score
 
